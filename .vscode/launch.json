@@ -1,0 +1,16 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Python: Current File",
+            "type": "python",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal",
+            "args": ["--pretrained_model_path", "./models/biomed_BLP_pubmed_model.bin", "--config_path","./models/biomed_BLP_pubmed_config.json","--vocab_path","./models/biomed_BLP_pubmed_vocab.txt", "--train_path", "train", "--dev_path", "validation", "--test_path", "test","--epochs_num","5", "--batch_size", "32", "--kg_name","Medical","--output_model_path","./outputs/kbert_med.bin"]
+        }
+    ]
+}
